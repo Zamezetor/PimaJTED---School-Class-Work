@@ -56,7 +56,7 @@ def input_handler(entity, prompts, valid_responses, clarification_text): # Globa
     # Player Management Module
 
 
-def add_player(name, player_num + 1):
+def add_player(name, player_num):
     """ Registers a new player with the given name.
     
     Parameters:
@@ -305,7 +305,7 @@ def setup_game():
     else:
         for i in range(num_players):
             player_name = input(f"Enter Player {i+1}'s name: ")
-            add_player(player_name,i)
+            add_player(player_name,i+1)
     initialize_match(int(input_handler("Setup", ["How many rounds shall we play? "], "*", "Enter the total number of rounds for the match.")))
 
 

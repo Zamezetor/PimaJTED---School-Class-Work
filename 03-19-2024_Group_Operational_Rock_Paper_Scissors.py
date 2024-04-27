@@ -325,3 +325,16 @@ To do:
 future to do: 
 		tournament style more than 2 players
 """
+
+
+
+'''
+from transformers import pipeline
+
+# Load a pre-trained model
+model = pipeline("text-generation", model="gpt2")
+
+# Generate text using the model
+text = model("Hello, how are you?")
+print(text[0]["generated_text"])
+'''

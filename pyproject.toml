@@ -9,6 +9,7 @@ packages = [{include = "pimajted_school_class_work"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 transformers = "4.40.1"
+tensorflow = "2.16.1"
 
 
 [build-system]

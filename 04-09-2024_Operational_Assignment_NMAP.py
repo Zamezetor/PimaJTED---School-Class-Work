@@ -17,14 +17,14 @@ def ips():
     temp = int(input("How Many IPs Do You Want To Scan? \n ► "))
     for i in range(temp):
         ip_list.append(input(f"Enter IP Address {i+1} \n ► "))
-    nmap
+    nmap()
 
 
 def nmap():
     for ipaddr in ip_list:
-        ip_file.write(f"\n{os.system(f"nmap -sC -sV -R -O -A -{ipaddr}-oN {ipaddr}")}")
-
-
+        var = (f"\n{os.system(f"nmap -sC -sV -R -O -A {ipaddr} -oN {ipaddr}")}")                
+        print(var)
+        ip_file.write(var)
 def run():
     ips()
 

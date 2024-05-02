@@ -42,7 +42,7 @@ def main():
             \n {total_Fries} Yum Yum Fries at ${.79 * total_Fries}
             \n {total_Sodas} Soda Yum at ${1.09 * total_Sodas}
             \n Your Total is ${((.99 * total_Burgers) + (.79 * total_Fries) + (1.09 * total_Sodas)) * 1.06}""")
-        end_Program = "y" in input("""Would You Like To End The Program? y/n \n ►  """).lower()
+        end_Program = ("y" in input("""Would You Like To End The Program? y/n \n ►  """).lower())
 
 # Code
 main()

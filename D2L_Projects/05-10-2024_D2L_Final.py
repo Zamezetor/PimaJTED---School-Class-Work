@@ -86,14 +86,16 @@ def birthdate_input():
 
 def main()
   patient = patients(input("First Name\n\t►"),input("Middle Name\n\t►"),input("Last Name\n\t►"),birthdate_input(),input("Address\n\t►"),input("Zip Code\n\t►"),input("Emergency Contact Name\n\t►"),input("Emergency Contact Phone Number \n\t►"))
-  procedure1 = procedures()
-  procedure2 = procedures()
-  procedure3 = procedures()
+  procedure1 = procedures(, , , )
+  procedure2 = procedures(, , , )
+  procedure3 = procedures(, , , )
 
   patient.get_all
   print("\n\nProcedures")
-  procedure1.get(, , , )
-  procedure2.get(, , , )
-  procedure3.get(, , , )
+  procedure1.get()
+  procedure2.get()
+  procedure3.get()
+  
+  
 # Code
 main()

@@ -11,10 +11,10 @@ class procedures:
     self.charge = charge
     
   def get(self):
-    print(f"On {self.date} a {self.procedure} is being done by {self.practitioner}. The Cost of the {self.procedure} is ${self.charge}")
+    print(f"On {self.date} a {self.procedure} is being done by {self.practitioner}. The Cost of the {self.procedure} is ${self.charge:.2f}")
   
   def get_charge(self):
-    return self.charge
+    return float(self.charge)
   
   def get_date(self):
     return self.date

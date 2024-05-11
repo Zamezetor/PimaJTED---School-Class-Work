@@ -73,11 +73,11 @@ def main():
         Birthdate: {patient.date_Get()}\n
         Emergency Contact: {patient.em_contact_name_Get()}, Phone: {patient.em_contact_num_Get()}''')
 
-  print("\nProcedures")
+  print(f"\nProcedures")
   procedure1.get()
   procedure2.get()
   procedure3.get()
-  print(f"the total cost of all procedures is ${procedure1.get_charge() + procedure2.get_charge() + procedure3.get_charge()}")
+  print(f"the total cost of all procedures is ${(procedure1.get_charge() + procedure2.get_charge() + procedure3.get_charge()):.2f}")
   
 
 # Code
